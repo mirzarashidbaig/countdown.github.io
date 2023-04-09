@@ -1,15 +1,10 @@
 
 
-
-    
-    const endDate = "24 March 2023 23:59:59"
-    document.getElementById("enddate").innerText= endDate;
-    const input = document.getElementsByClassName("inputs");
-
-
-
 function countdown(){
-
+    const inpd = document.querySelector('#date').value;
+    const endDate = inpd;
+    
+    const input = document.getElementsByClassName("inputs");
     const end = new Date(endDate);
     const now = new Date();
     const diff = (end-now)/1000;
@@ -24,9 +19,9 @@ function countdown(){
     input[1].value = hours
     input[2].value = minutes
     input[3].value = second
+
+    setInterval(() => {
+        countdown();
+    }, 1000);
 }
 
-
-setInterval(() => {
-    countdown();
-}, 1000);
