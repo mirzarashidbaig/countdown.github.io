@@ -14,18 +14,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 1px solid red;
+    background: #FFEEAD;
 
 }
 
 .head{
-   color: white;
+   color: #18122B;
    text-transform: uppercase;
    letter-spacing: 5px;
 }
 
 .sub{
-    color: white;
+    color: #18122B;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,6 +34,32 @@
     margin: 15px 0;
     position: relative;
 
+}
+
+.sub input{
+    width: 100% ;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.4em;
+    
+}
+
+.sub button{
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+    background: #4447c9;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.sub button:hover{
+    
+
+    background: #2E3840;
+    color: white;
 }
 
 .sub p{
@@ -45,27 +71,44 @@
 .inputbox{
    
    width: 80%;
-   position: relative;
-   left: 2%;
+   height: 30vh;
    display: flex;
    justify-content: center;
    align-items: center;
+   border: 2px solid black;
+   
 }
 
-.inputsc h3{
-    width: 12%;
-    height: 28px;
-    color: white;
-    font-size: 1em;
-    position: absolute;
-    text-align: center;
-    margin-top:10px;
+
+/* .inputsc h3{
+   text-align: center;
+} */
+
+.inputsc {
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
 }
 
 .inputsc input{
+    
     width: 70%;
-    padding: 15px 0;
-    font-size: 1.1em;
     text-align: center;
+    padding: 15px;
+    font-size: 1.3em;
+    background: transparent;
+    outline: none;
+   
+    
 }
+
+
+
+
+
 
