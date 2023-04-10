@@ -106,3 +106,18 @@
    
     
 }
+
+@media (max-width:400px){
+    .inputsc input{
+    
+        width: 90%;
+         
+    }
+
+    .inputbox{
+   
+        width: 90%;
+        
+        
+     }
+}
