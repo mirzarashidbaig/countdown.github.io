@@ -6,7 +6,6 @@ let input = document.getElementsByClassName("inputs");
 
 function countdown(){
     const end = new Date(endDate.value);
-    save();
     const now = new Date();
     const diff = (end-now)/1000;
     const days = Math.floor((diff/3600)/24);
@@ -26,14 +25,5 @@ function countdown(){
 }
 
 
-function save(){
-    localStorage.setItem("data", endDate.value);
-    
-}
 
-function show(){
-    endDate.value = localStorage.getItem("data")
-}
-
-show();
 
